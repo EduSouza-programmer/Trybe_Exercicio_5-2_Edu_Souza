@@ -56,11 +56,11 @@ Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos
 
 -   <p><a href="#6">6.</a> Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;</p>
 
--   <p><a href="#7">7.</a> Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do div criado no passo 5;</p>
+-   <p><a href="#7">7.</a> Adicione uma imagem com src configurado para o valor "https://picsum.photos/200" e classe small-image. Esse elemento deve ser filho do div criado no passo 5;</p>
 
 -   <p><a href="#8">8.</a> Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;</p>
 
--   <p><a href="#9">9.</a> Adicione 3 tags h3, todas sendo filhas do div criado no passo 2;</p>
+-   <p><a href="#9">9.</a> Adicione 3 tags h3, todas sendo filhas do div criado no passo 2.</p>
 
 ### Bônus
 
@@ -70,13 +70,13 @@ Agora que você criou muita coisa, vamos fazer algumas alterações e remoções
 
 -   <p><a href="#Bônus-2">Bônus 2:</a> Adicione a classe description nas 3 tags h3 criadas;</p>
 
--   <p><a href="#Bônus-3">Bônus 3:</a> Convite de evento;</p>
+-   <p><a href="#Bônus-3">Bônus 3:</a> Remova o div criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();</p>
 
--   <p><a href="#Bônus-4">Bônus 4:</a> Convite de evento;</p>
+-   <p><a href="#Bônus-4">Bônus 4:</a> Centralize o div criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto do div;</p>
 
--   <p><a href="#Bônus-5">Bônus 5:</a> Convite de evento;</p>
+-   <p><a href="#Bônus-5">Bônus 5:</a> Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content) para a cor verde;</p>
 
--   <p><a href="#Bônus-6">Bônus 6:</a> Convite de evento;</p>
+-   <p><a href="#Bônus-6">Bônus 6:</a> Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.</p>
 
 #
 
@@ -290,7 +290,7 @@ document.querySelector(".right-content").appendChild(ulList);
 
 ### 9°
 
--   Adicione 3 tags "h3", todas sendo filhas do div criado no passo 2
+-   Adicione 3 tags "h3", todas sendo filhas do div criado no passo 2.
 
 #### Resposta:
 
@@ -379,7 +379,7 @@ for (let i = 1; i <= 3; i += 1) {
  <summary>Código Javascript</summary>
 
 ```js
-
+document.querySelector(".main-content").removeChild(divLeftContent);
 ```
 
 </details>
@@ -392,7 +392,9 @@ for (let i = 1; i <= 3; i += 1) {
 
 #
 
-### Bônus-4°
+### Bônus 4°
+
+-   Centralize o div criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto do div;
 
 #### Resposta:
 
@@ -400,7 +402,7 @@ for (let i = 1; i <= 3; i += 1) {
  <summary>Código Javascript</summary>
 
 ```js
-
+divRightContent.style.marginRight = "auto";
 ```
 
 </details>
@@ -413,7 +415,9 @@ for (let i = 1; i <= 3; i += 1) {
 
 #
 
-### Bônus-5°
+### Bônus 5°
+
+-   Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
 
 #### Resposta:
 
@@ -421,7 +425,7 @@ for (let i = 1; i <= 3; i += 1) {
  <summary>Código Javascript</summary>
 
 ```js
-
+divCenterContent.style.backgroundColor = "green";
 ```
 
 </details>
@@ -434,7 +438,9 @@ for (let i = 1; i <= 3; i += 1) {
 
 #
 
-### Bônus-6°
+### Bônus 6°
+
+-   Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
 
 #### Resposta:
 
@@ -442,7 +448,12 @@ for (let i = 1; i <= 3; i += 1) {
  <summary>Código Javascript</summary>
 
 ```js
-
+let liLists = document.querySelectorAll("li");
+for (let i in liLists) {
+    if (liLists[i].innerText.includes("9") || liLists[i].innerText.includes("10")) {
+        document.querySelector("ul").removeChild(liLists[i]);
+    }
+}
 ```
 
 </details>
