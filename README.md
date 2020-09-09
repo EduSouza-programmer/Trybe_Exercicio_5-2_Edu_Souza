@@ -175,7 +175,25 @@ Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
  <summary>Código Javascript</summary>
 
 ```js
+// 1° Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
+let element = document.createElement("h1");
+element.innerText = "Exercício 5.2 - Javascript DOM";
+document.body.appendChild(element);
 
+// 2° Adicione a tag div com a classe main-content como filho da tag body;
+element = document.createElement("div");
+element.className = "main-content";
+document.body.appendChild(element);
+
+// 3° Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+let divCenterContent = document.createElement("div");
+divCenterContent.className = "center-content";
+document.querySelector(".main-content").appendChild(divCenterContent);
+
+// 4° Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+let pElement = document.createElement("p");
+pElement.innerText = "Estudar e muito bom";
+document.querySelector(".center-content").appendChild(pElement);
 ```
 
 </details>
