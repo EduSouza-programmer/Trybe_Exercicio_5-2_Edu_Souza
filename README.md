@@ -68,7 +68,7 @@ Agora que você criou muita coisa, vamos fazer algumas alterações e remoções
 
 -   <p><a href="#Bônus-1">Bônus 1:</a> Adicione a classe title na tag h1 criada;</p>
 
--   <p><a href="#Bônus-2">Bônus 2:</a> Convite de evento;</p>
+-   <p><a href="#Bônus-2">Bônus 2:</a> Adicione a classe description nas 3 tags h3 criadas;</p>
 
 -   <p><a href="#Bônus-3">Bônus 3:</a> Convite de evento;</p>
 
@@ -84,7 +84,7 @@ Agora que você criou muita coisa, vamos fazer algumas alterações e remoções
 
 ### 1°
 
-Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
+-   Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
 
 #### Resposta:
 
@@ -109,7 +109,7 @@ document.body.appendChild(element);
 
 ### 2°
 
-Adicione a tag div com a classe main-content como filho da tag body;
+-   Adicione a tag div com a classe main-content como filho da tag body;
 
 #### Resposta:
 
@@ -134,7 +134,7 @@ document.body.appendChild(element);
 
 ### 3°
 
-Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+-   Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
 
 #### Resposta:
 
@@ -159,7 +159,7 @@ document.querySelector(".main-content").appendChild(divCenterContent);
 
 ### 4°
 
-Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+-   Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
 
 #### Resposta:
 
@@ -184,7 +184,7 @@ document.querySelector(".center-content").appendChild(pElement);
 
 ### 5°
 
-Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+-   Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
 
 #### Resposta:
 
@@ -209,7 +209,7 @@ document.querySelector(".main-content").appendChild(divLeftContent);
 
 ### 6°
 
-Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
+-   Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
 
 #### Resposta:
 
@@ -234,7 +234,7 @@ document.querySelector(".main-content").appendChild(divRightContent);
 
 ### 7°
 
-Adicione uma imagem com "src" configurado para o valor "https://picsum.photos/200" e classe small-image. Esse elemento deve ser filho do "div" criado no passo 5;
+-   Adicione uma imagem com "src" configurado para o valor "https://picsum.photos/200" e classe small-image. Esse elemento deve ser filho do "div" criado no passo 5;
 
 #### Resposta:
 
@@ -261,7 +261,7 @@ document.querySelector(".left-content").appendChild(imgSmallImage);
 
 ### 8°
 
-Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do "div" criado no passo 6;
+-   Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do "div" criado no passo 6;
 
 #### Resposta:
 
@@ -290,7 +290,7 @@ document.querySelector(".right-content").appendChild(ulList);
 
 ### 9°
 
-Adicione 3 tags "h3", todas sendo filhas do div criado no passo 2
+-   Adicione 3 tags "h3", todas sendo filhas do div criado no passo 2
 
 #### Resposta:
 
@@ -319,7 +319,7 @@ Agora que você criou muita coisa, vamos fazer algumas alterações e remoções
 
 ### Bônus 1°
 
-Adicione a classe title na tag h1 criada;
+-   Adicione a classe title na tag h1 criada;
 
 #### Resposta:
 
@@ -327,7 +327,10 @@ Adicione a classe title na tag h1 criada;
  <summary>Código Javascript</summary>
 
 ```js
-
+let element = document.createElement("h1");
+element.innerText = "Exercício 5.2 - Javascript DOM";
+element.className = "title";
+document.body.appendChild(element);
 ```
 
 </details>
@@ -340,7 +343,9 @@ Adicione a classe title na tag h1 criada;
 
 #
 
-### Bônus-2°
+### Bônus 2°
+
+-   Adicione a classe description nas 3 tags h3 criadas;
 
 #### Resposta:
 
@@ -348,7 +353,10 @@ Adicione a classe title na tag h1 criada;
  <summary>Código Javascript</summary>
 
 ```js
-
+for (let i = 1; i <= 3; i += 1) {
+    let h3Element = document.querySelector(".main-content").appendChild(document.createElement("h3"));
+    h3Element.className = "description";
+}
 ```
 
 </details>
@@ -361,7 +369,9 @@ Adicione a classe title na tag h1 criada;
 
 #
 
-### Bônus-3°
+### Bônus 3°
+
+-   Remova o div criado no passo 5 "aquele que possui a classe left-content". Utilize a função ".removeChild";
 
 #### Resposta:
 
