@@ -56,11 +56,11 @@ Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos
 
 -   <p><a href="#6">6.</a> Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;</p>
 
--   <p><a href="#7">7.</a> Adicione a tag div com a classe main-content como filho da tag body;</p>
+-   <p><a href="#7">7.</a> Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do div criado no passo 5;</p>
 
--   <p><a href="#8">8.</a> Adicione a tag div com a classe main-content como filho da tag body;</p>
+-   <p><a href="#8">8.</a> Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;</p>
 
--   <p><a href="#9">9.</a> Adicione a tag div com a classe main-content como filho da tag body;</p>
+-   <p><a href="#9">9.</a> Adicione 3 tags h3, todas sendo filhas do div criado no passo 2;</p>
 
   
 
@@ -224,13 +224,19 @@ document.querySelector(".main-content").appendChild(divRightContent);
 
 ### 7°
 
+Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do div criado no passo 5;
+
 #### Resposta:
 
 <details>
  <summary>Código Javascript</summary>
 
 ```js
-
+let imgSmallImage = document.createElement("img");
+imgSmallImage.className = "small-image";
+imgSmallImage.src = "https://picsum.photos/200";
+imgSmallImage.alt = "Uma imagem para o exercício";
+document.querySelector(".left-content").appendChild(imgSmallImage);
 ```
 
 </details>
@@ -245,6 +251,37 @@ document.querySelector(".main-content").appendChild(divRightContent);
 
 ### 8°
 
+Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+let ulList = document.createElement("ul");
+for (let i = 1; i <= 10; i += 1) {
+    let liElement = document.createElement("li");
+    liElement.innerText = `${i}`;
+    ulList.appendChild(liElement);
+}
+document.querySelector(".right-content").appendChild(ulList);
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 9°
+
+Adicione 3 tags h3, todas sendo filhas do div criado no passo 2
+
 #### Resposta:
 
 <details>
@@ -264,7 +301,112 @@ document.querySelector(".main-content").appendChild(divRightContent);
 
 #
 
-### 9°
+### Bônus-1°
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### Bônus-2°
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### Bônus-3°
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### Bônus-4°
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### Bônus-5°
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### Bônus-6°
 
 #### Resposta:
 
