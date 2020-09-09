@@ -44,7 +44,23 @@ O objetivo desses exercícios é colocar em prática o que você acabou de apren
 
 Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos exercícios:
 
--   <p><a href="#1">1.</a> Desafio: O modelo boxer - Adicione bordas, Margem e Espaçamento;</p>
+-   <p><a href="#1">1.</a> Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;</p>
+
+-   <p><a href="#2">2.</a> Adicione a tag div com a classe main-content como filho da tag body;</p>
+
+-   <p><a href="#3">3.</a> Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;</p>
+
+-   <p><a href="#4">4.</a> Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;</p>
+
+-   <p><a href="#5">5.</a> Adicione a tag div com a classe main-content como filho da tag body;</p>
+
+-   <p><a href="#6">6.</a> Adicione a tag div com a classe main-content como filho da tag body;</p>
+
+-   <p><a href="#7">7.</a> Adicione a tag div com a classe main-content como filho da tag body;</p>
+
+-   <p><a href="#8">8.</a> Adicione a tag div com a classe main-content como filho da tag body;</p>
+
+-   <p><a href="#9">9.</a> Adicione a tag div com a classe main-content como filho da tag body;</p>
 
   
 
@@ -58,6 +74,101 @@ Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos
 
 ### 1°
 
+Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+// 1° Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
+let element = document.createElement("h1");
+element.innerText = "Exercício 5.2 - Javascript DOM";
+document.body.appendChild(element);
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 2°
+
+Adicione a tag div com a classe main-content como filho da tag body;
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+// 1° Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
+let element = document.createElement("h1");
+element.innerText = "Exercício 5.2 - Javascript DOM";
+document.body.appendChild(element);
+
+// 2° Adicione a tag div com a classe main-content como filho da tag body;
+element = document.createElement("div");
+element.className = "main-content";
+document.body.appendChild(element);
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 3°
+
+Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+// 1° Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
+let element = document.createElement("h1");
+element.innerText = "Exercício 5.2 - Javascript DOM";
+document.body.appendChild(element);
+
+// 2° Adicione a tag div com a classe main-content como filho da tag body;
+element = document.createElement("div");
+element.className = "main-content";
+document.body.appendChild(element);
+
+// 3° Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+let divCenterContent = document.createElement("div");
+divCenterContent.className = "center-content";
+document.querySelector(".main-content").appendChild(divCenterContent);
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 4°
+
+Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+
 #### Resposta:
 
 <details>
@@ -70,9 +181,111 @@ Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos
 </details>
 
 <p align="right">
-    <a href="https://edusouza-programmer.github.io/Trybe_Exercicio_3-3_Edu_Souza//parte-1/challenge_1-o_modelo_boxer.html">
-    <img alt="Go index.html" src="https://img.shields.io/badge/Go-index.html-orange">
-    </a>&nbsp;
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 5°
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 6°
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 7°
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 8°
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
+    <a href="#Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 9°
+
+#### Resposta:
+
+<details>
+ <summary>Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
     <a href="#Sumário">
     <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
   </a>
