@@ -62,11 +62,21 @@ Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos
 
 -   <p><a href="#9">9.</a> Adicione 3 tags h3, todas sendo filhas do div criado no passo 2;</p>
 
-  
+### Bônus
 
-### **_Projetos_**
+Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
 
--   <p><a href="#Project_1">Projeto_1:</a> Convite de evento;</p>
+-   <p><a href="#Bônus-1">Bônus 1:</a> Adicione a classe title na tag h1 criada;</p>
+
+-   <p><a href="#Bônus-2">Bônus 2:</a> Convite de evento;</p>
+
+-   <p><a href="#Bônus-3">Bônus 3:</a> Convite de evento;</p>
+
+-   <p><a href="#Bônus-4">Bônus 4:</a> Convite de evento;</p>
+
+-   <p><a href="#Bônus-5">Bônus 5:</a> Convite de evento;</p>
+
+-   <p><a href="#Bônus-6">Bônus 6:</a> Convite de evento;</p>
 
 #
 
@@ -224,7 +234,7 @@ document.querySelector(".main-content").appendChild(divRightContent);
 
 ### 7°
 
-Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do div criado no passo 5;
+Adicione uma imagem com "src" configurado para o valor "https://picsum.photos/200" e classe small-image. Esse elemento deve ser filho do "div" criado no passo 5;
 
 #### Resposta:
 
@@ -251,7 +261,7 @@ document.querySelector(".left-content").appendChild(imgSmallImage);
 
 ### 8°
 
-Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do "div" criado no passo 6;
 
 #### Resposta:
 
@@ -280,7 +290,7 @@ document.querySelector(".right-content").appendChild(ulList);
 
 ### 9°
 
-Adicione 3 tags h3, todas sendo filhas do div criado no passo 2
+Adicione 3 tags "h3", todas sendo filhas do div criado no passo 2
 
 #### Resposta:
 
@@ -303,7 +313,13 @@ for (let i = 1; i <= 3; i += 1) {
 
 #
 
-### Bônus-1°
+## Bônus
+
+Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
+
+### Bônus 1°
+
+Adicione a classe title na tag h1 criada;
 
 #### Resposta:
 
