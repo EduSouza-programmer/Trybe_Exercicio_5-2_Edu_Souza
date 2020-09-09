@@ -288,7 +288,9 @@ Adicione 3 tags h3, todas sendo filhas do div criado no passo 2
  <summary>Código Javascript</summary>
 
 ```js
-
+for (let i = 1; i <= 3; i += 1) {
+    document.querySelector(".main-content").appendChild(document.createElement("h3"));
+}
 ```
 
 </details>
