@@ -52,9 +52,9 @@ Para uma melhor organização, faça commits a cada tarefa concluída. Vamos aos
 
 -   <p><a href="#4">4.</a> Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;</p>
 
--   <p><a href="#5">5.</a> Adicione a tag div com a classe main-content como filho da tag body;</p>
+-   <p><a href="#5">5.</a> Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;</p>
 
--   <p><a href="#6">6.</a> Adicione a tag div com a classe main-content como filho da tag body;</p>
+-   <p><a href="#6">6.</a> Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;</p>
 
 -   <p><a href="#7">7.</a> Adicione a tag div com a classe main-content como filho da tag body;</p>
 
@@ -82,7 +82,6 @@ Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag 
  <summary>Código Javascript</summary>
 
 ```js
-// 1° Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
 let element = document.createElement("h1");
 element.innerText = "Exercício 5.2 - Javascript DOM";
 document.body.appendChild(element);
@@ -108,12 +107,6 @@ Adicione a tag div com a classe main-content como filho da tag body;
  <summary>Código Javascript</summary>
 
 ```js
-// 1° Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
-let element = document.createElement("h1");
-element.innerText = "Exercício 5.2 - Javascript DOM";
-document.body.appendChild(element);
-
-// 2° Adicione a tag div com a classe main-content como filho da tag body;
 element = document.createElement("div");
 element.className = "main-content";
 document.body.appendChild(element);
@@ -139,17 +132,6 @@ Adicione a tag div com a classe center-content como filho da tag div criada no p
  <summary>Código Javascript</summary>
 
 ```js
-// 1° Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
-let element = document.createElement("h1");
-element.innerText = "Exercício 5.2 - Javascript DOM";
-document.body.appendChild(element);
-
-// 2° Adicione a tag div com a classe main-content como filho da tag body;
-element = document.createElement("div");
-element.className = "main-content";
-document.body.appendChild(element);
-
-// 3° Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
 let divCenterContent = document.createElement("div");
 divCenterContent.className = "center-content";
 document.querySelector(".main-content").appendChild(divCenterContent);
@@ -175,22 +157,6 @@ Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
  <summary>Código Javascript</summary>
 
 ```js
-// 1° Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
-let element = document.createElement("h1");
-element.innerText = "Exercício 5.2 - Javascript DOM";
-document.body.appendChild(element);
-
-// 2° Adicione a tag div com a classe main-content como filho da tag body;
-element = document.createElement("div");
-element.className = "main-content";
-document.body.appendChild(element);
-
-// 3° Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
-let divCenterContent = document.createElement("div");
-divCenterContent.className = "center-content";
-document.querySelector(".main-content").appendChild(divCenterContent);
-
-// 4° Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
 let pElement = document.createElement("p");
 pElement.innerText = "Estudar e muito bom";
 document.querySelector(".center-content").appendChild(pElement);
@@ -208,13 +174,17 @@ document.querySelector(".center-content").appendChild(pElement);
 
 ### 5°
 
+Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+
 #### Resposta:
 
 <details>
  <summary>Código Javascript</summary>
 
 ```js
-
+let divLeftContent = document.createElement("div");
+divLeftContent.className = "left-content";
+document.querySelector(".main-content").appendChild(divLeftContent);
 ```
 
 </details>
@@ -229,13 +199,17 @@ document.querySelector(".center-content").appendChild(pElement);
 
 ### 6°
 
+Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
+
 #### Resposta:
 
 <details>
  <summary>Código Javascript</summary>
 
 ```js
-
+let divRightContent = document.createElement("div");
+divRightContent.className = "right-content";
+document.querySelector(".main-content").appendChild(divRightContent);
 ```
 
 </details>
