@@ -456,7 +456,7 @@ for (let i = 1; i <= 3; i += 1) {
 
 #
 
-## Bônus
+# Bônus
 
 Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
 
